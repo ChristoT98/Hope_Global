@@ -9,42 +9,35 @@
 
 /* InfoBar Styles Start */
 .infoBarContainer {
-  width: 100%;
   padding: 6px 100px;
   -webkit-box-shadow: -5px -3px 4px 2px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: -5px -3px 4px 2px rgba(0, 0, 0, 0.5);
   box-shadow: -5px -3px 4px 2px rgba(0, 0, 0, 0.5);
 }
 
-.infoBarWrapper > span {
+.infoBarContainer span i {
   color: #777676;
-  font-size: 14px;
-  font-weight: 400;
-}
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+} 
 
-.infoBarWrapper > span > a {
+.infoBarContainer span a {
   text-decoration: none;
   color: #777676;
 }
 
-.infoBarWrapper > span > a:hover {
+.infoBarContainer span i:hover, .infoBarContainer span a:hover {
   color: #0003af;
 }
 
-.socialIconWrapper > i {
-  font-size: 16px;
+.socialIconWrapper>i {
   padding: 0 10px;
-  cursor: pointer;
-}
-
-.socialIconWrapper > i:hover {
-  color: #0003af;
 }
 
 .btnCheckEligibility {
   background-color: #189d0e;
   border-radius: 2px;
-  width: 150px;
 }
 
 .infoSectionContainer {
@@ -57,7 +50,6 @@
 
 .navbar {
   margin-top: 2px;
-  padding: 0 70px;
   background-color: #fff;
 }
 
@@ -157,7 +149,7 @@ nav.navbar-toggler span {
 
 .slide-img {
   width: 100%;
-  height: 550px;
+  height: 800px;
 }
 
 .country-flag {
@@ -475,11 +467,7 @@ p {
   -webkit-appearance: none;
 }
 
-#freeAssessment
-  .inner-wrapper
-  form
-  .form-control
-  .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+#freeAssessment .inner-wrapper form .form-control .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
   width: 100%;
 }
 
@@ -664,7 +652,7 @@ p {
 
 /* Footer Styles Start */
 .footerContainer {
-  padding: 20px 70px;
+  padding: 80px 80px;
   background-color: #002995;
 }
 
@@ -688,7 +676,7 @@ p {
   position: relative;
 }
 
-.serviceList > h6 {
+.serviceList>h6 {
   padding-bottom: 10px;
 }
 
@@ -719,7 +707,7 @@ span.divider {
 
 .copyRightBar {
   background-color: #06238c;
-  height: 15vh;
+  padding: 30px 0px;
   color: #fff;
   font-weight: 300;
   font-size: 15px;
@@ -727,7 +715,7 @@ span.divider {
   line-height: 40px;
 }
 
-.socialIconContainer > i {
+.socialIconContainer>i {
   margin: 0 10px;
   cursor: pointer;
 }
@@ -744,6 +732,7 @@ span.divider {
   right: 70px;
   bottom: 70px;
   transition: background 0.25s;
+  z-index: 20;
 }
 
 .btnArrow:hover {
@@ -763,6 +752,7 @@ span.divider {
 }
 
 @media only screen and (max-width: 960px) {
+
   /* InfoBar Styles Start */
   .infoBarContainer {
     display: none;
@@ -777,7 +767,7 @@ span.divider {
     position: fixed;
   }
 
-  .navbar-brand > img {
+  .navbar-brand>img {
     width: 100px;
   }
 
@@ -853,18 +843,18 @@ span.divider {
     align-items: center;
   }
 
-  .info-section-1 > span {
+  .info-section-1>span {
     font-size: 13px;
     padding: 5px 0px;
     color: #777676;
     text-align: center;
   }
 
-  .info-section-1 > span > i {
+  .info-section-1>span>i {
     font-size: 12px;
   }
 
-  .info-section-2 > span > a {
+  .info-section-2>span>a {
     text-decoration: none;
     font-size: 15px;
     padding: 10px 0px;
@@ -878,12 +868,12 @@ span.divider {
     align-items: center;
   }
 
-  .info-section-3 > .socialIconWrapper > i {
+  .info-section-3>.socialIconWrapper>i {
     color: #777676;
     font-size: 20px;
   }
 
-  .info-section-4 > .btnCheckEligibility {
+  .info-section-4>.btnCheckEligibility {
     width: 200px;
   }
 
@@ -895,7 +885,7 @@ span.divider {
   }
 
   .serviceList {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 
   .copyRightBar {
