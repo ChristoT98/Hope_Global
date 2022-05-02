@@ -8,22 +8,20 @@
 }
 
 /* InfoBar Styles Start */
+
 .infoBarContainer {
   position: fixed;
   top: 0;
+  left: 50%;
   z-index: 10;
-  width: 100%;
-  height: 45px;
-  padding: 6px 100px;
-  -webkit-box-shadow: -5px -3px 4px 2px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: -5px -3px 4px 2px rgba(0, 0, 0, 0.5);
-  box-shadow: -5px -3px 4px 2px rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, 0);
+  -webkit-box-shadow: 0 3px 2px -2px gray;
+  -moz-box-shadow: 0 3px 2px -2px gray;
+  box-shadow: 0 3px 2px -2px gray;
 }
 
 .infoBarContainer span i {
   color: #777676;
-  font-size: 16px;
-  font-weight: 600;
   cursor: pointer;
 }
 
@@ -37,13 +35,8 @@
   color: #0003af;
 }
 
-.socialIconWrapper>i {
-  padding: 0 10px;
-}
-
 .btnCheckEligibility {
   background-color: #189d0e;
-  border-radius: 2px;
 }
 
 .infoSectionContainer {
@@ -54,43 +47,42 @@
 
 /* Navbar Styles Start */
 
-.topbar {
+.navbar-container {
   position: fixed;
-  top: 45px;
-  width: 100%;
-  background-color: rgb(255, 255, 255);
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 48px;
   z-index: 9;
+}
+
+.topbar {
   display: flex;
   align-items: center;
+  padding: 10px 10px;
 }
 
 .topbar .image-container {
   flex: 0.5;
-  justify-content: center;
   display: flex;
-  width: 100%;
-  padding: 10px 50px;
+  justify-content: flex-start;
   cursor: pointer;
 }
 
 .topbar ul {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   list-style: none;
 }
 
 .topbar ul li {
   display: inline-block;
-  line-height: 60px;
-  margin: 0 15px;
+  margin: 0 20px 0 0;
 }
 
 .topbar ul li a {
-  position: relative;
-  padding: 5px 0;
   color: rgb(94, 94, 94);
-  font-size: 18px;
+  font-size: 1.125rem;
   text-decoration: none;
 }
 
@@ -123,6 +115,7 @@ label #close-icon {
 .slide-img {
   width: 100%;
   height: 800px;
+  /* margin-top:160px; */
 }
 
 .country-flag {
@@ -694,7 +687,7 @@ span.divider {
 }
 
 .btnArrow {
-  background-color: #fff;
+  background-color: rgb(70, 70, 70);
   width: 50px;
   height: 50px;
   font-size: 20px;
@@ -709,7 +702,7 @@ span.divider {
 }
 
 .btnArrow:hover {
-  background-color: rgb(207, 207, 207);
+  background-color: rgb(94, 94, 94);
 }
 
 .btnArrow:active {
@@ -718,129 +711,7 @@ span.divider {
 
 /* Footer Styles End */
 
-@media only screen and (max-width: 768px) {
-  .card-parent {
-    top: 220px;
-  }
-}
-
 @media only screen and (max-width: 960px) {
-
-  /* InfoBar Styles Start */
-  .infoBarContainer {
-    display: none;
-  }
-
-  /* InfoBar Styles End */
-
-  /* Navbar Styles Start */
-
-  label #bar-icon {
-    display: block;
-  }
-
-  .topbar {
-    top: 0;
-    justify-content: space-between;
-  }
-
-  .topbar .image-container {
-    padding: 10px;
-  }
-
-  .topbar img {
-    width: 50%;
-    height: auto;
-  }
-
-  .topbar ul {
-    position: fixed;
-    width: 75%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 100vh;
-    background-color: rgb(252, 252, 252);
-    top: 0px;
-    left: -75%;
-    text-align: left;
-    padding-left: 15px;
-    transition: 0.5s;
-    display: block;
-  }
-
-  .topbar ul li {
-    display: block;
-    margin: 30px 0;
-    line-height: 30px;
-    border-bottom: 0.5px solid rgb(214, 214, 214)
-  }
-
-  .topbar ul li a {
-    font-size: 16px;
-    display: block;
-  }
-
-  /* For Responsive State */
-  #res-menu:checked~ul {
-    left: 0;
-  }
-
-  #res-menu:checked~label #bar-icon {
-    display: none;
-  }
-
-  #res-menu:checked~label #close-icon {
-    display: block;
-  }
-
-  /* Navbar Styles End */
-
-  /* Info Section Styles Start */
-  .infoSectionContainer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-bottom: 20px;
-  }
-
-  .info-section-1,
-  .info-section-2 {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .info-section-1>span, .info-section-2>span {
-    font-size: 12px;
-    padding: 10px 0px;
-    color: #777676;
-  }
-
-  .info-section-1>span>i {
-    font-size: 10px;
-  }
-
-  .info-section-2 span a {
-    text-decoration: none;
-    color: #777676;
-  }
-
-  .info-section-3,
-  .info-section-4 {
-    padding-top: 20px;
-    display: flex;
-    align-items: center;
-  }
-
-  .info-section-3>.socialIconWrapper>i {
-    color: #777676;
-    font-size: 20px;
-  }
-
-  .info-section-4>.btnCheckEligibility {
-    width: 200px;
-  }
-
-  /* Info Section Styles End */
 
   /* Card & Carousal Styles Start */
   .slide-img {
@@ -925,4 +796,128 @@ span.divider {
     background: url(../img/guy.png) no-repeat bottom center;
     background-size: 407px;
   }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .card-parent {
+    top: 220px;
+  }
+
+  /* InfoBar Styles Start */
+  .infoBarContainer {
+    display: none;
+  }
+
+  /* InfoBar Styles End */
+
+  /* Navbar Styles Start*/
+
+  .navbar-container {
+    top: 0;
+  }
+
+  label #bar-icon {
+    display: block;
+  }
+
+  .topbar {
+    justify-content: space-between;
+  }
+
+  .topbar img {
+    width: 75%;
+  }
+
+  .topbar ul {
+    position: fixed;
+    width: 75%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+    background-color: rgb(252, 252, 252);
+    top: 0;
+    left: -100%;
+    text-align: left;
+    padding-left: 20px;
+    transition: 0.5s;
+    display: block;
+  }
+
+  .topbar ul li {
+    display: block;
+    margin: 30px 0;
+    line-height: 30px;
+    border-bottom: 0.5px solid rgb(214, 214, 214)
+  }
+
+  .topbar ul li a {
+    font-size: 16px;
+    display: block;
+  }
+
+  /* For Responsive State */
+  #res-menu:checked~ul {
+    left: 0;
+  }
+
+  #res-menu:checked~label #bar-icon {
+    display: none;
+  }
+
+  #res-menu:checked~label #close-icon {
+    display: block;
+  }
+
+  /* Navbar Styles End */
+
+  /* Info Section Styles Start */
+
+  .infoSectionContainer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+  .info-section-1,
+  .info-section-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-section-1>span,
+  .info-section-2>span {
+    font-size: 12px;
+    padding: 10px 0px;
+    color: #777676;
+  }
+
+  .info-section-1>span>i {
+    font-size: 10px;
+  }
+
+  .info-section-2 span a {
+    text-decoration: none;
+    color: #777676;
+  }
+
+  .info-section-3,
+  .info-section-4 {
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+  }
+
+  .info-section-3>.socialIconWrapper>i {
+    color: #777676;
+    font-size: 20px;
+    padding: 0 5px;
+  }
+
+  .info-section-4>.btnCheckEligibility {
+    width: 200px;
+  }
+
+  /* Info Section Styles End */
+
 }
