@@ -5,293 +5,271 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="./css/flexslider.css" rel="stylesheet"/>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style2.css" />
     <title>Hope Global</title>
 </head>
 
-<body>
-    <!-- InfoBar Start -->
-    <div class="container infoBarContainer">
-        <div class="row bg-white py-2 px-2">
-            <div class="col-md-6 d-flex align-items-center justify-content-start">
-                <span class="pe-4">
-                    <i class="fa-solid fa-phone-flip"></i>
-                </span>
-                <span class="pe-4">
-                    <i class="fa-brands fa-whatsapp" style="color: #43bf51;"></i>
-                </span>
-                <span class="pe-4">
-                    <i class="fa-regular fa-envelope"></i>
-                </span>
-                <span class="pe-4">
-                    <a href="">Partner With Us</a>
-                </span>
-                <span>
-                    <a href="">Blog</a>
-                </span>
-            </div>
-            <div class="col-md-6 d-flex align-items-center justify-content-end">
-                <span class="socialIconWrapper">
-                    <i class="fa-brands fa-facebook-f pe-2"></i>
-                    <i class="fa-brands fa-twitter pe-2"></i>
-                    <i class="fa-brands fa-linkedin pe-2"></i>
-                    <i class="fa-brands fa-instagram pe-2"></i>
-                </span>
-                <span class="px-2">
-                    <button type="button" class="btn btn-sm btn-success btnCheckEligibility">Check
-                        Eligibility
-                    </button>
-                </span>
-
-                <span class="pe-2">
-                    <a href="">Login</a>
-                </span>
-            </div>
-        </div>
-    </div>
-    <!-- InfoBar End -->
+<body >
 
     <!-- NavBar Start -->
-    <div class="container navbar-container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="row">
-                    <nav class="topbar bg-white">
-                        <input type="checkbox" id="res-menu">
-                        <div class="image-container">
-                            <img src="./img/logo.PNG" alt="">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 logo">
+                    <a href="index-2.html" class="mainLogo"><img src="img/logo2.png" alt="Immigration Consultants in Dubai" title="Migratenow Logo"></a>
+                    <a href="index-2.html" class="textLogo"><img src="img/logo2.png" alt="Licensed Immigration Consultants in Dubai" title="Migratenow Logo"></a>
+                </div>
+                <div class="col-sm-9 right">
+                    <div class="row top">
+                        <div class="col-md-6 d-flex align-items-center justify-content-start">
+                            <span class="pe-4">
+                                <i class="fa-solid fa-phone-flip"></i>
+                            </span>
+                            <span class="pe-4">
+                                <i class="fa-brands fa-whatsapp" style="color: #43bf51;"></i>
+                            </span>
+                            <span class="pe-4">
+                                <i class="fa-regular fa-envelope"></i>
+                            </span>
+                            <span class="pe-4">
+                                <a href="">Partner With Us</a>
+                            </span>
+                            <span>
+                                <a href="">Blog</a>
+                            </span>
                         </div>
-                        <ul>
-                            <li><a href="#">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">About</a>
-                            </li>
-                            <li>
-                                <a href="#">Skilled</a>
-                            </li>
-                            <li>
-                                <a href="#">Study Abroad</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact Us</a>
-                            </li>
-                            <div class="infoSectionContainer">
-                                <div class="row">
-                                    <div class="col-md-12 info-section-1">
-                                        <span>
-                                            <i class="fa-solid fa-phone-flip"></i>
-                                            +971-521 021 00
-                                        </span>
-                                        <span>
-                                            <i class="fa-brands fa-whatsapp" style="color: #43bf51;"></i>
-                                            +971-521 02100
-                                        </span>
-                                        <span>
-                                            <i class="fa-regular fa-envelope"></i>
-                                            info@ektahopeglobalconsultancy.com
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12 info-section-2">
-                                        <span>
-                                            <a href="">Partner With Us</a>
-                                        </span>
-                                        <span>
-                                            <a href="">Blog</a>
-                                        </span>
-                                        <span>
-                                            <a href="">Login</a>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12 info-section-3">
-                                        <span class="socialIconWrapper">
-                                            <i class="fa-brands fa-facebook-f"></i>
-                                            <i class="fa-brands fa-twitter"></i>
-                                            <i class="fa-brands fa-linkedin"></i>
-                                            <i class="fa-brands fa-instagram"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12 info-section-4">
-                                        <button type="button" class="btn btn-sm btn-success btnCheckEligibility">Check
-                                            Eligibility</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </ul>
-                        <label for="res-menu">
-                            <i class="fas fa-bars" id="bar-icon"></i>
-                            <i class="fas fa-times" id="close-icon"></i>
-                        </label>
-                    </nav>
+                        <div class="col-md-6 d-flex align-items-center justify-content-end">
+                            <span class="socialIconWrapper">
+                                <i class="fa-brands fa-facebook-f pe-2"></i>
+                                <i class="fa-brands fa-twitter pe-2"></i>
+                                <i class="fa-brands fa-linkedin pe-2"></i>
+                                <i class="fa-brands fa-instagram pe-2"></i>
+                            </span>
+                            <span class="px-2">
+                                <button type="button" class="btn btn-sm btn-success btnCheckEligibility">Check
+                                    Eligibility
+                                </button>
+                            </span>
+            
+                            <span class="pe-2">
+                                <a href="">Login</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row bottom">
+                        <div class="menu">
+                             <ul class="mainMenu">
+                                 
+                                <li class="parentItem ">
+                                     <a href="canada.html">CANADA</a>
+                                     <span class="arrowSpan"></span>
+                                     <ul class="submenu">
+                                         <li><a href="canada.html">Why Canada?</a></li>
+                                         <li><a href="canada/express-visa.html">Express Entry Visa</a></li>
+                                         <li><a href="canada/family-visa.html">Family Visa</a></li>
+                                         
+                                         <li><a href="canada/student-visa.html">Student Visa</a></li>
+                                         <li><a href="canada/investor-visa.html">Investor Visa</a></li>
+                                         <li><a href="canada/province-nomination.html">Province Nomination</a></li>
+                                     </ul>
+                                </li>
+                                <li class="parentItem  ">
+                                     <a href="australia.html">AUSTRALIA</a>
+                                         <span class="arrowSpan"></span>
+                                     <ul class="submenu">
+                                         <li><a href="australia.html">Why Australia?</a></li>
+                                         <li><a href="australia/skill-migration.html">Skill Migration</a></li>
+                                         <li><a href="australia/family-visa.html">Family Visa</a></li>
+                                         
+                                         <li><a href="australia/student-visa.html">Student Visa</a></li>
+                                         <li><a href="australia/investor-visa.html">Investor Visa</a></li>
+                                         <li><a href="australia/state-nomination.html">State Nomination</a></li>
+                                     </ul>
+                                </li>
+                               
+                                <li class=""><a href="investment.html">CBI</a></li>
+                                <li class=""><a href="uk.html">UK</a></li>
+                                <li class=""><a href="free-assessment.html">FREE ASSESSMENT</a></li>
+                                <li><a href="https://blog.migratenow.ae/" target="_blank">BLOG</a></li>
+                                <li class=""><a href="contact.html">CONTACT US</a></li>
+                             </ul>
+                             <div class="ham_btn"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
     <!-- NavBar End -->
 
     <!-- Carousal & Card Start -->
-    <div class="container-fluid p-0">
-        <div class="row position-absolute m-0 card-parent" style="z-index: 3;">
-            <div class="col d-flex flex-wrap justify-content-around">
-                <div class="card card-size" style="width: 15rem; height: 14rem">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-sm-4 col-xs-4 flag-column">
-                                <img class="country-flag" src="img/canada.png" alt="" />
-                            </div>
-                            <div class="col-sm-8 col-xs-8 country-name-title">
-                                <p class="card-subtitle mt-2 card-sub-topic">Migrate To</p>
-                                <p class="card-title mt-0 country-name">CANADA</p>
-                            </div>
-                        </div>
-                        <p class="card-text mt-4 card-description">
-                            One of the top and most favourite choice for migration.
-                        </p>
-                        <button type="button" class="btn btn-outline-primary btn-sm custom-btn">
-                            Learn More
-                        </button>
-                    </div>
-                </div>
 
-                <div class="card card-size" style="width: 15rem; height: 14rem">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-sm-4 col-xs-4 flag-column">
-                                <img class="country-flag" src="img/australia.png" alt="" />
-                            </div>
-                            <div class="col-sm-8 col-xs-8 country-name-title">
-                                <p class="card-subtitle mt-2 card-sub-topic">Migrate To</p>
-                                <p class="card-title mt-0 country-name">AUSTRALIA</p>
-                            </div>
+    <section id="hero" class="homepage">
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <div class="caption container">
+                        <div class="inner">
+                           <!-- <h1>UNPARALLELED<br /> <span>Migration Services</span></h1> -->
                         </div>
-                        <p class="card-text mt-4 card-description">
-                            Land of many opportunities. A place
-                        </p>
-                        <button type="button" class="btn btn-outline-primary btn-sm custom-btn">
-                            Learn More
-                        </button>
                     </div>
-                </div>
+                    <img src="img/can1.jpg" alt="Immigrate to Canada" title="Migratenow Canada immigration">
+                </li>
+                <li>
+                    <div class="caption container">
+                        <div class="inner">
+                            <!-- <h1>UNPARALLELED<br /> <span>Migration Services</span></h1> -->
+                        </div>
+                    </div>
+                    <img src="img/aus.jpg" alt="Migrate to Australia" title="Migratenow Australia immigration">
+                </li>
 
-                <div class="card card-size" style="width: 15rem; height: 14rem">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-sm-4 col-xs-4 flag-column">
-                                <img class="country-flag" src="img/australia.png" alt="" />
-                            </div>
-                            <div class="col-sm-8 col-xs-8 country-name-title">
-                                <p class="card-subtitle mt-2 card-sub-topic">Migrate To</p>
-                                <p class="card-title mt-0 country-name">UK</p>
-                            </div>
-                        </div>
-                        <p class="card-text mt-4 card-description">
-                            Thriving Economy. Inspiring Business Great Place to work.
-                        </p>
-                        <button type="button" class="btn btn-outline-primary btn-sm custom-btn">
-                            Learn More
-                        </button>
-                    </div>
-                </div>
+                 <li>
+                    <div class="caption container">
+                        <div class="inner">
 
-                <div class="card card-size" style="width: 15rem; height: 14rem">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-sm-4 col-xs-4 flag-column">
-                                <img class="country-flag" src="img/australia.png" alt="" />
-                            </div>
-                            <div class="col-sm-8 col-xs-8 country-name-title">
-                                <p class="card-subtitle mt-2 card-sub-topic">Migrate To</p>
-                                <p class="card-title mt-0 country-name">PORTUGAL</p>
-                            </div>
                         </div>
-                        <p class="card-text mt-4 card-description">
-                            One of the top and most favourite choice for migration.
-                        </p>
-                        <button type="button" class="btn btn-outline-primary btn-sm custom-btn">
-                            Learn More
-                        </button>
                     </div>
-                </div>
+                    <img src="img/london2.jpg" alt="UK investment visa consultants dubai" title="Migratenow to UK">
+                </li>
 
-                <div class="card card-size" style="width: 15rem; height: 14rem">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-sm-4 col-xs-4 flag-column">
-                                <img class="country-flag" src="img/australia.png" alt=""
-                                    style="height: 4rem; width: auto" />
-                            </div>
-                            <div class="col-sm-8 col-xs-8 country-name-title">
-                                <p class="card-subtitle mt-2 card-sub-topic">Migrate To</p>
-                                <p class="card-title mt-0 country-name">MALTA</p>
-                            </div>
+                 <li>
+                    <div class="caption container">
+                        <div class="inner">
+                           <!-- <h1>UNPARALLELED<br /> <span>Migration Services</span></h1> -->
                         </div>
-                        <p class="card-text mt-4 card-description">
-                            Land of many opportunities. A place of tranquility.
-                        </p>
-                        <button type="button" class="btn btn-outline-primary btn-sm custom-btn">
-                            Learn More
-                        </button>
                     </div>
-                </div>
-            </div>
+                    <img src="img/cbi.jpg" alt="Citizenship by Investment visa agency dubai" title="Migratenow CBI">
+                </li>
+
+            </ul>
         </div>
-        <div>
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                        aria-label="Slide 5"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/slide_img.jpg" class="d-block w-100 slide-img" alt="..." />
+    </section>
+    <section id="hero" class="homepage mobile">
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <div class="caption container">
                     </div>
-                    <div class="carousel-item">
-                        <img src="img/main02.jpg" class="d-block w-100 slide-img" alt="..." />
+                    <img src="img/mobilebanners/mcan.jpg" alt="Canada Migration Agency in Dubai" title= "Migrateno Canada immigration Firm dubai">
+                </li>
+                <li>
+                    <div class="caption container">
                     </div>
-                    <div class="carousel-item">
-                        <img src="img/main03.jpg" class="d-block w-100 slide-img" alt="..." />
+                    <img src="img/mobilebanners/maus.jpg" alt="Australia Immigration firm in Dubai" title="Migratenow Australia migration company">
+                </li>
+                <li>
+                    <div class="caption container">
                     </div>
-                    <div class="carousel-item">
-                        <img src="img/main04.jpg" class="d-block w-100 slide-img" alt="..." />
+                    <img src="img/mobilebanners/muk.jpg" alt="best UK migration visa company dubai " title="Migratenow UK visa agency dubai">
+                </li>
+                <li>
+                    <div class="caption container">
                     </div>
-                    <div class="carousel-item">
-                        <img src="img/main05.jpg" class="d-block w-100 slide-img" alt="..." />
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+                    <img src="img/mobilebanners/cbi.jpg" alt="Citizenship by Investment visa consultant dubai" title="Migratenow CBI visa cosultant">
+                </li>
+            </ul>
         </div>
-    </div>
+    </section>
     <!-- Carousal & Card End -->
+
+
+    <section id="meta">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-xl-2 col-md-6 canada divnm">
+                    <div class="in_wrap">
+                        <a href="canada.html">
+                            <div class="top">
+                                <div>
+                                    <small>Migrate To</small> <br />
+                                    <span>CANADA</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="bot">
+                            <p align="justify">One of the top and most favorite choice for migration. </p>
+                            <a href="canada.html"><button>Learn More</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-md-6 aus divnm">
+                    <div class="in_wrap">
+                        <a href="australia.html">
+                            <div class="top">
+                                <div>
+                                    <small>Migrate To</small> <br />
+                                    <span>AUSTRALIA</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="bot">
+                            <p align="justify">Land of many opportunities. A place of tranquility.</p>
+                            <a href="australia.html"><button>Learn More</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-6 uk divnm">
+                    <div class="in_wrap">
+                        <a href="uk.html">
+                            <div class="top">
+                                <div>
+                                    <small>Invest in</small> <br />
+                                    <span>UK</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="bot">
+                            <p align="justify">Thriving Economy. Inspiring Business Great Place to work.</p>
+                            <a href="uk.html"><button>Learn More</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-6 inv divnm">
+                    <div class="in_wrap">
+                        <a href="investment.html">
+                            <div class="top">
+                                <div>
+                                    <small>Get Second Passport</small> <br />
+                                    <span>CITIZENSHIP</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="bot">
+                            <p class="slightbold">Get your second passport. Travel with Luxury.</p>
+                            <a href="investment.html"><button>Learn More</button></a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-xl-2 col-md-6 inv divnm">
+                    <div class="in_wrap">
+                        <a href="investment.html">
+                            <div class="top">
+                                <div>
+                                    <small>Get Second Passport</small> <br />
+                                    <span>CITIZENSHIP</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="bot">
+                            <p class="slightbold">Get your second passport. Travel with Luxury.</p>
+                            <a href="investment.html"><button>Learn More</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- About Us Container Start -->
     <div class="container-fluid p-0 second-container">
@@ -773,9 +751,14 @@
     </div>
     <!-- Footer End -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
+        <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/jquery.flexslider-min.js"></script>
+        <script src="./js/jquery.sticky.js"></script>
+        <script src="./js/custom.js"></script>
+        <script>function isNumberKey(e){var h=e.which?e.which:e.keyCode;return 46!=h&&h>31&&(48>h||h>57)?!1:!0}</script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900" rel="stylesheet">
 </body>
 
 </html>
